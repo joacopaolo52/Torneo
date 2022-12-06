@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    /* background-image: url('../assets/fondo.jpg'); */
+    background-color: #302f6e;
+}
+
+
+    /* TITULOS */
+h1 {
+    margin: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+}
+
+    /* NAVBAR */
+
+.navbar-expand-lg {
+    justify-content: center !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
+}
+.navbar-nav {
+    padding: 1rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.685);
+    box-shadow: 1px 12px 12px 7px rgba(255, 255, 255, 0.575); 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav-link {
+    font-size: 2.5rem ;
+    color: white;
+    font-weight: bold !important;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+    /* FOOTER  */
+
+footer {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.350);
+    margin-bottom: 0;
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contacto-footer img {
+    width: 4rem;
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+        /*************************** CARRUSEL *********************/
+
+#carouselExampleControls {
+    border: 10px solid rgba(255, 255, 255, 0.575);
+    border-radius: 10px;
+    max-width: 1000px;
+    max-height: 80%;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    width: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 2rem;
+    border-radius: 20rem;
+    background-color: black;
+}
+
+.carousel-caption {
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.350);
+}
+.carousel-caption h5 {
+    font-size: 2rem;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+
+@media (min-width: 320px) and (max-width:500px) {
+   .nav-link {
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+   }
+   .carousel-control-prev-icon, .carousel-control-next-icon {
+    padding: 1rem;
+   }
+   h1 {
+    font-size: 2.5rem;
+   }
+   h2 {
+    font-size: 1.7rem;
+   }
+}
+
+
+        /****************************** TORNEOS ************************************/
+
+#torneos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    flex-wrap: wrap;
+}
+
+ul {
+    font-size: 2rem;
+    list-style: none;
+}
+
+a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.menu-torneo {
+    margin: auto;
+    text-align: center;
+    width: 30rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.200);
+    display: inline-block;
+    margin-left: 5rem;
+}
+
+.item-torneo {
+    padding: 1rem;
+    color: black !important;
+    margin-bottom: 2rem;
+}
+
+.item-torneo:hover {
+    background-color: rgba(0, 0, 0, 0.685);
+    box-shadow: -2px 1px 12px 7px rgba(255, 255, 255, 0.575); 
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.menu-torneo .active {
+    background-color: rgba(0, 0, 0, 0.685);
+    box-shadow: -2px 1px 12px 7px rgba(255, 255, 255, 0.575); 
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+
+
+/* TABLA */
+
+.tabla-posiciones {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.tabla-goleadores, .tabla-vallas, .tabla-fairplay, .tabla-sancionados, .tabla-fixture {
+    display: none;
+    width: auto;
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.tabla-posiciones td, .tabla-posiciones th {
+    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.tabla-sancionados td, .tabla-sancionados th {
+    padding: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.tabla-fairplay td, .tabla-fairplay th {
+    padding: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+
+.tabla-goleadores td, .tabla-goleadores th, .tabla-vallas td, .tabla-vallas th  {
+    padding: 1.5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.accordion-button {
+    display: flex;
+    justify-content: center;
+    background-color: #2c3034 !important;
+    color: white !important;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 40rem;
+    height: 5rem;
+}
+
+.accordion-button h3 {
+    text-align: center;
+    margin: auto;
+}
+
+.accordion-button::after {
+    content: none;
+}
+
+.accordion-header {
+    background-color: #2c3034;
+}
+
+.accordion-collapse {
+    background-color: #2c3034;
+    color: white;
+}
+.accordion-body table {
+    margin: auto;
+}
+.accordion-body table th {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.show {
+    background-color: #2c3034;
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .tabla-posiciones td, .tabla-posiciones th {
+        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .tabla-sancionados td, .tabla-sancionados th {
+        padding: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .tabla-fairplay td, .tabla-fairplay th {
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .tabla-goleadores td, .tabla-goleadores th, .tabla-vallas td, .tabla-vallas th  {
+        padding: 1rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+}
+
+@media (min-width:500px) and (max-width: 768px) {
+    .tabla-posiciones, .tabla-goleadores, .tabla-vallas, .tabla-fairplay, .tabla-sancionados {
+        font-size: 1.5rem;
+    }
+    .tabla-posiciones td, .tabla-posiciones th {
+        padding: 1rem;
+    }
+    .tabla-sancionados td, .tabla-sancionados th {
+        padding: 0.5rem;
+    }
+    .tabla-fairplay td, .tabla-fairplay th {
+        padding: 1rem;
+    }
+    .tabla-goleadores td, .tabla-goleadores th, .tabla-vallas td, .tabla-vallas th  {
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .logo {
+        display: none !important;
+    }
+}
+
+@media (min-width:320px) and (max-width: 500px) {
+    .tabla-posiciones, .tabla-goleadores, .tabla-vallas, .tabla-fairplay, .tabla-sancionados {
+        font-size: 1.3rem;
+    }
+    .tabla-posiciones td, .tabla-posiciones th {
+        padding: 0.5rem;
+    }
+    .tabla-sancionados td, .tabla-sancionados th {
+        padding: 0.5rem;
+    }
+    .tabla-fairplay td, .tabla-fairplay th {
+        padding: 0.5rem;
+    }
+    .tabla-goleadores td, .tabla-goleadores th, .tabla-vallas td, .tabla-vallas th  {
+        padding: 0.5rem;
+    }
+    .logo {
+        display: none !important;
+    }
+
+    .accordion-button {
+        width: 30rem;
+    }
+
+}
+
+@media (min-width:320px) and (max-width: 854px) {
+    .menu-torneo {
+        margin: auto;
+    }
+}
+
+.logo {
+    width: 10rem;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    box-shadow: 1px 1px 7px 7px white;
+
+}
+
+#torneo-index {
+    display: grid;
+    width: 70%;
+    color: black;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.658);
+    font-size: 20px;
+}
+
+#torneo-index h1 {
+    font-size: 40px;
+}
+
+#torneo-index h2 {
+    font-size: 30px;
+}
+
+#torneo-index h4 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px;
+}
