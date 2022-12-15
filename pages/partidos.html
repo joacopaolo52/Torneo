@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="navbar-nav">
             <a class="nav-link" href="../index.html">Inicio</a>
-            <a class="nav-link" href="../pages/torneos.html">Torneos</a>
+            <a class="nav-link" href="../pages/torneos.html">Torneo</a>
             <a class="nav-link" href="partidos.html">Partidos</a>
             <a class="nav-link" href="#">Buffet</a>
           </div>
@@ -21,11 +21,17 @@
 
     <div class="frames">
 
-        <div class="frame1">
+        <div id="frame1">
 
-            <h3>MKN vs LA ESQUINA</h3>
+            <h3>      <button id="arrowLeft1">🡸</button>          MKN vs LA ESQUINA           <button id="arrowRight1">🡺</button></h3>
             <iframe class="frame" src="https://www.youtube.com/embed/aUWTCBI7nEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+        </div>
+
+        <div id="frame2">
+
+            <h3>  <button id="arrowLeft2">🡸</button>             MESSI vs LA ESQUINA             <button id="arrowRight2">🡺</button> </h3>
+            <iframe class="frame" src="https://www.youtube.com/embed/SnzutOn--tw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
     </div>
@@ -41,6 +47,9 @@
             <a href="mailto:abcdefg@gmail.com" target="_blank" rel="noopener noreferrer"><img class="btn-footer" src="../assets/email.svg" alt="Logo Email"></a>
         </div>
       </footer>
+
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/partidos.js"></script>
 
 </body>
 </html>

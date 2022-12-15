@@ -58,6 +58,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 30px !important;
 }
 
 .contacto-footer img {
@@ -296,7 +297,10 @@ a {
     }
     .frame {
         width: 300px !important; 
-        height: 150px !important;
+        height: 200px !important;
+    }
+    .frames {
+        height: 50vh;
     }
 }
 
@@ -349,17 +353,19 @@ a {
 
 .frames {
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.frame1 {
+#frame1, #frame2 {
     margin: auto;
     justify-content: center;
     align-items: center;
 }
 
-.frame1 h3 {
+#frame1 h3, #frame2 h3 {
     font-size: 30px;
     color: white;
     text-align: center;
@@ -371,4 +377,7 @@ a {
 .frame {
     width: 660px; 
     height: 375px;
+}
+#frame2 {
+    display: none;
 }
